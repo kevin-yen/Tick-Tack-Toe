@@ -1,0 +1,154 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Canada) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENC)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_CAN
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "N&ew Game",                   IDM_NEW
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Option"
+    BEGIN
+        MENUITEM "Settings",                    IDD_SETTINGS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "A&bout",                      IDD_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT DIALOG 0, 0, 137, 120
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "Tahoma"
+BEGIN
+    DEFPUSHBUTTON   "OK",ID_OK,4,101,40,14
+    LTEXT           "Tick-Tack Toe program demostration",IDC_STATIC,6,3,100,33
+    GROUPBOX        "User Agreement",IDC_STATIC,7,21,124,74
+    LTEXT           "1. You may NOT redistibute, modify, or remove this program without the approval of the club president.",IDC_STATIC,12,31,110,36
+    LTEXT           "2. Until declared valid by the club president, the author retain all copyrights.",IDC_STATIC,12,65,110,28
+    LTEXT           "Copyright (c) Programmer's Club of Diamond Ranch",IDC_STATIC,47,99,88,25
+END
+
+IDD_SETTINGS DIALOGEX 0, 0, 137, 120
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Settings"
+FONT 8, "Tahoma", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Apply",ID_APPLY,7,101,40,14
+    PUSHBUTTON      "Cancel",ID_CANCEL,56,101,40,14
+    GROUPBOX        "Level",IDC_STATIC,7,6,124,90
+    CONTROL         "Easy",ID_RANDOM,"Button",BS_AUTORADIOBUTTON,14,19,50,14
+    CONTROL         "Normal",ID_SIMPLE,"Button",BS_AUTORADIOBUTTON,14,37,50,14
+    CONTROL         "Hard",ID_NORMAL,"Button",BS_AUTORADIOBUTTON,14,55,50,14
+    CONTROL         "Unbeatable",ID_UNBEATABLE,"Button",BS_AUTORADIOBUTTON,14,73,50,14
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON                    "Icon.ico"
+IDI_ICONSM              ICON                    "IconSm.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_CROSS               BITMAP                  "Cross.bmp"
+IDB_CIRCLE              BITMAP                  "Circle.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_SETTINGS, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (Canada) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
